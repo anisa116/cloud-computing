@@ -15,3 +15,9 @@ https://console.cloud.google.com/storage/browser/capstone-c23ps466-1-tf2-models
 - create requirements.txt to install all the libraries needed in the main.py file into one.
 
 - create app.yaml to set the app engine configuration things needed in main.py.
+
+- add image documentation in folder documentation
+![Alt text](documentation/register.png)
+![Alt text](documentation/login.png)
+![Alt text](documentation/predict.png)
+
