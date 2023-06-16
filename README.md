@@ -32,6 +32,7 @@ https://console.cloud.google.com/storage/browser/capstone-c23ps466-1-tf2-models
 
 ## Usage
 Access the API using the appropriate endpoint
+base url: https://service-dot-capstone-c23-ps466.et.r.appspot.com 
 1. "POST /register": to register a user account
 2. "POST /login": to use the registered account
 3. "POST /predict": to perform face image detection
