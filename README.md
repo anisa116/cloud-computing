@@ -1,25 +1,39 @@
-# cloud-computing
+# cloud-computing framewiz
 
-team cloud computing:
-anisa = c192dky4640@bangkit.academy
-jihannajma = c192dky4695@bangkit.academy
+## Description
+This cloud-computing project is an implementation of API creation for FrameWiz application. The API is responsible for responding to login register and face detection requests from users. This API is run on the backend and interacts with the Google cloud app engine computing service.
 
-- add model files that have been trained in protobuf format, 
-because the folder is more than 100mb in folder "model2", it is made public on cloud storage, here is the link:
-https://console.cloud.google.com/storage/browser/capstone-c23ps466-1-tf2-models
+## System Requirements
+- python39
+- sql
+- google cloud (app engine)
 
-- create a users table that has been created by najma jihan.
+## Instalization
+- Install the libraries needed in the project and collect them in the requirements.txt file:
+pip install -r requrements.txt
 
-- create api models and registers and then deploy them using the app engine computing service. To register and login using sql database to enter user data such as email, name, and password. So, in the main.py file there is a register and model api into one, because I have difficulty making one url so that the login and register api also uses the python programming language which previously used node.js.
+- Download the model folder and put it in this folder, for the following install folder link:
+https://console.cloud.google.com/storage/browser/capstone-c23ps466-1-tf2-models 
 
-- create requirements.txt to install all the libraries needed in the main.py file into one.
+## Configuration
+- Enable sql services
+- Select MySQL, then create an instance name and password as well as region and connection.
+- If you have entered phpmyadmin.co to be more free in creating a database
+- Create the app.yaml file
+- Fill in the file according to the configuration required by the application, such as in our application requires instance class F4_1 and memory size 10 gb.
+- Access the API using the appropriate endpoint
+"POST /register": to register a user account
+"POST /login": to use the registered account
 
-- create app.yaml to set the app engine configuration things needed in main.py.
+## Deploy
+- Enable authentication
+gcloud auth login
 
-- add image documentation in folder documentation
-![Alt text](documentation/register.png)
-![Alt text](documentation/login.png)
-![Alt text](documentation/predict.png)
+- Deploy using app engine computing
+gcloud app deploy
 
-- and we also use documentation on google drive with the following link:
-https://drive.google.com/drive/folders/1dzM4CNz9ceGaVmKcGvXoyfmZ-O482-UH?usp=sharing
+## Usage
+- Access the API using the appropriate endpoint
+"POST /register": to register a user account
+"POST /login": to use the registered account
+"POST /predict": to perform face image detection
