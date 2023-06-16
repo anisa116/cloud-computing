@@ -21,3 +21,5 @@ https://console.cloud.google.com/storage/browser/capstone-c23ps466-1-tf2-models
 ![Alt text](documentation/login.png)
 ![Alt text](documentation/predict.png)
 
+- and we also use documentation on google drive with the following link:
+https://drive.google.com/drive/folders/1dzM4CNz9ceGaVmKcGvXoyfmZ-O482-UH?usp=sharing
