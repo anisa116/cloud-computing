@@ -1,0 +1,9 @@
+runtime: python39
+service: service
+entrypoint: gunicorn -b :$PORT main:app
+
+instance_class: F4_1G
+
+resources:
+  memory_gb: 4
+  disk_size_gb: 10
